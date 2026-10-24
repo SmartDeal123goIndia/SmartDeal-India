@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#5145cd">
+<meta name="description" content="SmartDeal India helps you discover useful products and compare shopping links from Amazon India and Flipkart.">
+<title>SmartDeal India | Discover. Compare. Shop.</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header"><div class="container nav">
+<a class="brand" href="index.html" aria-label="SmartDeal India home">SmartDeal <span>India</span></a>
+<button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+<nav id="mainNav"><a href="index.html#deals">Deals & picks</a><a href="index.html#compare">Compare stores</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav>
+<a class="button button-soft nav-cta" href="index.html#deals">Explore deals ↓</a>
+</div></header>
+<main class="container">
+<section class="hero">
+<div><div class="eyebrow">Smarter picks · simpler shopping</div><h1>Discover. Compare.<br>Shop smarter.</h1>
+<p>Explore useful gadgets, home essentials, study accessories and everyday favourites. Compare shopping options and choose the retailer you prefer.</p>
+<form class="search" id="searchForm"><input id="search" type="search" placeholder="Search products or categories…" aria-label="Search products"><button class="button button-gold" type="submit">Search products</button></form>
+</div><div class="hero-art" aria-hidden="true">🛍️</div>
+</section>
+<div class="disclosure"><strong>Affiliate disclosure:</strong> Some links on this website may be affiliate links. If you buy through an eligible link, we may earn a commission at no extra cost to you. Product availability and prices can change; confirm details on the retailer's website.</div>
+<section id="deals">
+<div class="section-heading"><div><h2>Featured products</h2><p>Curated ideas across everyday categories.</p></div><span class="muted small" id="count"></span></div>
+<div class="filters" id="filters"><button class="filter active" data-cat="All">All products</button><button class="filter" data-cat="Electronics">Electronics</button><button class="filter" data-cat="Home">Home</button><button class="filter" data-cat="Lifestyle">Lifestyle</button><button class="filter" data-cat="Study">Study & office</button></div>
+<div class="toolbar"><label for="sort">Sort products</label><select id="sort"><option value="featured">Featured</option><option value="name">Name A–Z</option></select></div>
+<div class="product-grid" id="products" aria-live="polite"></div><div class="empty" id="empty">No matching products found. Try another search or category.</div>
+</section>
+<section class="compare-panel" id="compare"><h2>Compare before you buy</h2><p>Check product details, delivery options, warranty and current price on each retailer's page. This website does not display unverified prices, ratings or discounts.</p><div class="button-row"><a class="button button-soft" href="https://www.amazon.in/" target="_blank" rel="noopener noreferrer">Browse Amazon India ↗</a><a class="button button-soft" href="https://www.flipkart.com/" target="_blank" rel="noopener noreferrer">Browse Flipkart ↗</a></div></section>
+<section id="how"><div class="section-heading"><div><h2>How SmartDeal India works</h2><p>Transparent product referrals, no checkout on this website.</p></div></div><div class="steps"><article class="step"><div class="step-number">1</div><h3>Discover</h3><p>Visitors search product suggestions and browse categories.</p></article><article class="step"><div class="step-number">2</div><h3>Choose a store</h3><p>They open the retailer's product page using your affiliate link.</p></article><article class="step"><div class="step-number">3</div><h3>Earn eligible commission</h3><p>Retailers track qualifying purchases under their programme terms and report eligible commissions to your account.</p></article></div></section>
+</main>
+<footer class="site-footer"><div class="container footer-grid"><div><a class="brand" href="index.html">SmartDeal <span>India</span></a><p>Independent shopping discovery and comparison.</p></div><div><strong>Explore</strong><a href="index.html#deals">Featured products</a><a href="about.html">About us</a><a href="contact.html">Contact</a></div><div><strong>Policies</strong><a href="privacy.html">Privacy policy</a><a href="disclosure.html">Affiliate disclosure</a></div></div><div class="container footer-bottom"><p>This independent website is not affiliated with or endorsed by Amazon or Flipkart.</p><p>“As an Amazon Associate I earn from qualifying purchases.” Keep this statement if you participate in Amazon Associates and follow its current requirements.</p><small>© <span id="year"></span> SmartDeal India. Product details and retailer terms may change.</small></div></footer>
+<script src="products.js"></script><script src="app.js"></script>
+</body></html>
